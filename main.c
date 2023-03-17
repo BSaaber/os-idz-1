@@ -9,9 +9,9 @@
 
 
 // corner case:
-// text: [aaaa.aaa] (5000 symbols)
+// text: [bbb...bbb\0] (5000 symbols, 4999 'b' and '\0')
 // substr: a
-// output.txt = [0    1    2    3    ... 4998 4999] //  5000 * (4 + 1) = 25 000 symbols
+// output.txt = [0    1    2    3    ... 4998] //  4999 * (4 + 1) < 25 000 < 25 100 symbols
 const int buf_size = 25100;
 
 int main(int argc, char* argv[]) {
