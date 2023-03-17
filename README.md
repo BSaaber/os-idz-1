@@ -36,9 +36,18 @@
 ```
 
 
-команда для запуска: `gcc main.c -o res && ./res <имя входного файла> <подстрока> <имя выходного файла>`
-
-например:
+команда для запуска:
 ```
-gcc main.c -o res && ./res input.txt ab output.txt && cat output.txt
+gcc main.c -o res && ./res <имя входного файла> <подстрока> <имя выходного файла>
+```
+
+Тесты:
+```
+gcc main.c -o res
+./res 1_input.txt ab 1_output.txt
+./res 2_input.txt bj 2_output.txt
+./res 3_input.txt b 3_output.txt
+./res 4_input.txt b 4_output.txt
+./res 5_input.txt k 5_output.txt
+./res 6_input.txt x 6_output.txt
 ```
